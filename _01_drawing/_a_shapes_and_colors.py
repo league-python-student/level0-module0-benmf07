@@ -17,15 +17,9 @@ if __name__ == '__main__':
     for i in range(4):
         my_turtle.forward(100)
         my_turtle.left(90)
-    my_turtle.goto(50,-300)
-    my_turtle.begin_fill()
-    my_turtle.circle(200,30)
-    my_turtle.end_fill()
-    for i in range(9):
-        my_turtle.forward(50)
-        my_turtle.left(60)
-    
-    # Move your turtle forward using .forward(100)
+    my_turtle.circle(20,360)
+
+
     # TEST    Did your turtle move forward?
 
     # Move your turtle left or right using .left(90) or .right(90)

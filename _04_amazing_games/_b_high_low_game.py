@@ -14,15 +14,20 @@ if __name__ == '__main__':
     # 3. Code a for loop to run steps 4-10, 10 times
     for i in range(10):
         # 4. Ask the user for a guess using a pop-up window, and save their response
-        guess = simpledialog.askinteger(title=guess,prompt="guess a number")
+        guess = simpledialog.askinteger(title="guess",prompt="guess a number")
         # 5. If the guess is correct
         if random_num == guess:
-            messagebox.showinfo("you win!")
-            'sys.exit(0)'
+            messagebox.showinfo(message="you win!")
+            sys.exit(0)
             # 6. Win. Use 'sys.exit(0)' to end the program
-
+        if guess> random_num:
+            messagebox.showinfo(message="your guess is too high")
+        if guess< random_num:
+            messagebox.showinfo(message="your guess is too low")
         # 7. if the guess is high
-        if random_num ==
+    messagebox.showinfo(message="you lost")
+
+
             # 8. Tell them it's too high
         # 9. Else if the guess is low
             # 10. Tell them it's too low
